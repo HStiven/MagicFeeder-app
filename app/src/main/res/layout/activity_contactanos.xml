@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Contactanos">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backInicio"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/baseline_density"
+        android:backgroundTint="@color/primario"
+        android:layout_marginTop="30dp"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RtlHardcoded,RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/LogoContatanos"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="este es el logo de la marca "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:text="¿Quiénes somos?"
+        android:textColor="@color/primario"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoContatanos"
+        tools:ignore="HardcodedText,MissingConstraints,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/parrafoObj"
+        style="@style/TextView.Light"
+        android:layout_width="348dp"
+        android:textColor="@color/black"
+        android:layout_height="175dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/Objetivo_general"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppName" />
+
+    <TextView
+        android:id="@+id/textViewContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:text="@string/contactanos"
+        android:textColor="@color/primario"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parrafoObj" />
+
+    <TextView
+        android:id="@+id/textViewPhoneNumber"
+        style="@style/TextView.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="10dp"
+        android:autoSizeTextType="uniform"
+        android:text="3185012077"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContactUs"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/textViewAppName2"
+        style="@style/TextView.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/black"
+        android:text="Magic Feeder"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhoneNumber"
+        tools:ignore="HardcodedText,MissingConstraints,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        style="@style/TextView.Light"
+        android:layout_width="151dp"
+        android:layout_height="42dp"
+        android:autoSizeTextType="uniform"
+        android:text="magicfeeder@gmail.com"
+        android:textColor="@color/black"
+
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppName2"
+        tools:ignore="HardcodedText,MissingConstraints,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/textViewAppName3"
+        style="@style/TextView.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/black"
+        android:text="Magic Feeder"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail"
+        tools:ignore="HardcodedText,MissingConstraints,UnusedAttribute" />
+
+    <ImageButton
+        android:id="@+id/btn_link1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bxs_phone_call"
+        android:backgroundTint="@color/primario"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPhoneNumber"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPhoneNumber"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContactUs"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btn_link2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bxl_facebook_circle"
+        android:backgroundTint="@color/primario"
+        android:contentDescription="este es el link que llevara a la pagina de facebook de la marca "
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAppName2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAppName2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhoneNumber"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btn_link3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bxl_gmail"
+        android:backgroundTint="@color/primario"
+        android:contentDescription="este boton se ira hacia el gmail"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmail"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppName2"
+        tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_link4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bxl_youtube"
+        android:backgroundTint="@color/primario"
+        android:contentDescription="este es el link que llevara al canal de youtube de la marca "
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAppName3"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAppName3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

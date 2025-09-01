@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4D7F9"
+    android:padding="12dp"
+    tools:context=".DispensadorMenu">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backInicio"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/baseline_density"
+        android:paddingStart="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RtlHardcoded,RtlSymmetry" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        app:cardBackgroundColor="@color/primario"
+        app:cardCornerRadius="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_Pet_Top"
+                android:textAllCaps="true"
+                android:textSize="17dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/namePet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Firulais"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cc"
+        android:text="@string/cantidad_de_comida"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/comida"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cc"
+        app:layout_constraintEnd_toStartOf="@+id/agua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardBackgroundColor="@color/primario">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agua"
+                android:textSize="17dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txAgua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1 (S)"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="2dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnRestar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/menos"
+                    app:maxImageSize="40dp"
+                    tools:ignore="ContentDescription" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnSumar"
+                    app:maxImageSize="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sumar"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dispensarAgua"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_dispensar_bg"
+        android:text="@string/dispensar_agua"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/dispensarComida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comida" />
+
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        android:text="fecha"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dispensarAgua" />
+
+    <Button
+        android:id="@+id/timeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="14dp"
+        android:text="hora"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dispensarComida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/button_dispensar_bg"
+        android:text="@string/dispensar_comida"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/dispensarAgua"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comida" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/agua"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/cc"
+        app:layout_constraintStart_toEndOf="@+id/comida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/primario">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comida"
+                android:textSize="17dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txComida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="1 (S)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="2dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn2Restar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/menos"
+                    app:maxImageSize="40dp"
+                    tools:ignore="ContentDescription" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn2Sumar"
+                    app:maxImageSize="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sumar"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ImageButton
+        android:id="@+id/btnMicrofono"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/button_normal_bg"
+        android:src="@drawable/microphone_off"
+        app:layout_constraintEnd_toStartOf="@+id/btnCamara"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeButton"
+        app:tint="@color/white"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnCamara"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/camera"
+        app:tint="@color/white"
+        android:background="@drawable/rounde_button"
+        app:layout_constraintStart_toEndOf="@+id/btnMicrofono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeButton"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/ques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="¿Cuanto tiempo para cada porciòn?"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMicrofono"
+        tools:ignore="HardcodedText" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTemporizador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="@color/primario"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ques">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="00:00:00"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnReiniciar"
+                android:layout_width="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/restart"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/IniciarParar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardTemporizador"
+        app:layout_constraintVertical_bias="0.02"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/magicfeeder_600"
+            android:text="@string/start"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#EE0000"
+            android:text="@string/stop"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

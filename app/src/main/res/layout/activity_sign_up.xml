@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context="com.example.singuploginfirebase.SingUpActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sniglet"
+        android:text="Registrate"
+        android:textAllCaps="true"
+        android:textSize="@dimen/tamaño_letra"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/bxs_user"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/agrandirnarrow"
+            android:inputType="textPersonName"
+            android:paddingStart="36dp"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_top"
+        android:hint="Apellido"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/bxs_user"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_Lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="38dp"
+            android:fontFamily="@font/agrandirnarrow"
+            android:inputType="textPersonName"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Usu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_top"
+        android:hint="Usuario"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/bxs_user"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="38dp"
+            android:fontFamily="@font/agrandirnarrow"
+            android:inputType="textPersonName"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_top"
+        android:hint="Correo Electrónico"
+        app:startIconDrawable="@drawable/bxl_gmail"
+        tools:ignore="HardcodedText">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:paddingStart="40dp"
+            android:fontFamily="@font/agrandirnarrow"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_top"
+        android:hint="Contraseña "
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/bxs_key"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="@font/agrandirnarrow"
+            android:paddingStart="38dp"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/cbTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:text="@string/texto_terms"
+
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:background="@drawable/blue_round"
+        android:textColorHint="@color/white"
+        android:textSize="17sp"
+        android:fontFamily="@font/sniglet"
+        android:hint="Registrarse"
+        android:layout_marginEnd="10sp"
+        android:layout_marginTop="20sp"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="10sp"
+        android:fontFamily="@font/sniglet"
+        android:background="@drawable/cyan_button"
+        android:hint="@string/hint_cancelar"
+        android:textColorHint="@color/black"
+        android:textSize="17sp" />
+
+
+
+    <TextView
+        android:id="@+id/loginRedirectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Ya estas registrado? Ingresa "
+        android:textColor="#157ED1"
+        android:textSize="17sp"
+        android:fontFamily="@font/sniglet"
+        android:layout_marginTop="15dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context="com.example.singuploginfirebase.LoginActivity">
+
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio de sesión"
+        android:textAllCaps="true"
+        style="@style/TextView.Light"
+        android:fontFamily="@font/sniglet"
+        android:textSize="@dimen/tamaño_letra"
+        tools:ignore="HardcodedText" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Correo Electrónico"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/bxl_gmail"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/agrandirnarrow"
+            android:paddingStart="38dp"
+            android:inputType="textEmailAddress"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_top"
+        android:hint="Contraseña"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/bxs_key"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="@font/agrandirnarrow"
+            android:paddingStart="38dp"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/signUpRedirectText"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:fontFamily="@font/sniglet"
+        android:text="¿No tienes cuenta? Registrate "
+        android:textAlignment="center"
+        android:textColor="#355bdb"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="15sp"
+        android:layout_marginEnd="10sp"
+        android:background="@drawable/blue_round"
+        android:textColorHint="@color/white"
+        android:hint="Ingresar"
+        android:fontFamily="@font/sniglet"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancelar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="10sp"
+        android:background="@drawable/cyan_button"
+        android:hint="@string/hint_cancelar"
+        android:fontFamily="@font/sniglet"
+        android:textColorHint="@color/black"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:textColor="#355bdb"
+        android:fontFamily="@font/sniglet"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

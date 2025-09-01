@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Magic Feeder</string>
+    <string name="logo">Logo</string>
+    <!--Perfil-->
+    <string name="button1">Guardar</string>
+    <string name="button2">Cancelar</string>
+    <string name="button4">Número de telefono</string>
+    <string name="button5">Usuario</string>
+    <string name="button6">Edad mascota</string>
+    <string name="Apellido">Apellido</string>
+    <string name="button7">Tipo de mascota</string>
+    <string name="button8">Nombre Mascota</string>
+    <string name="button9">Raza Mascota</string>
+    <string name="button10">Nombre</string>
+    <string name="button11">Subir Archivos</string>
+    <string name="Tablerofotos">string/button14</string>
+    <string name="button13">Fotos Perfil</string>
+    <string name="enviar">enviar</string>
+    <string name="back_button_desc">e</string>
+    <string name="cancelar">cancelar</string>
+    <string name="Nombre">Escriba su nombre</string>
+    <string name="dispensador">Dispensador</string>
+    <string name="catIcon">Gato</string>
+    <string name="dogIcon">Perro</string>
+    <string name="name_Pet_Top">Nombre de la mascota</string>
+    <string name="genero_macho">Macho</string>
+    <string name="genero_hembra">Hembra</string>
+    <string name="cp">Cantidad de porciones</string>
+    <string name="cantidad_de_comida">Cantidad de comida</string>
+    <string name="comida">Comida</string>
+    <string name="agua">Agua</string>
+    <string name="stop">Detener</string>
+    <string name="start">Enviar</string>
+    <string name="Pregunta_inicio">¿Ya tienes cuenta?</string>
+    <string name="contactanos">Contactanos</string>
+    <string name="Objetivo_general">Desarrollar un sistema de alimentación automático para mascotas, con capacidad para dispensar alimentos sólidos y líquido, este será programado por medio de Arduino y controlado atreves de una aplicación móvil. El sistema proporcionara una solución eficiente y remota, adaptable a la ubicación del usuario.</string>
+
+    <!--Spinner-->
+    <string name="spinner_prompt">SELECCIONE UNA OPCIÓN</string>
+
+    <!--Registro textos -->
+    <string name="hint_name">Nombre</string>
+    <string name="hint_LastName">Apellido</string>
+    <string name="hint_email">Correo Electrónico</string>
+    <string name="hint_Password">Contraseña</string>
+    <string name="hint_aceptar">Registrarse</string>
+    <string name="hint_cancelar">Cancelar</string>
+    <string name="hint_contraseña">Contraseña</string>
+    <string name="hint_Email">Correo Electrónico</string>
+    <string name="titulo">Registro Magic Feeder</string>
+    <string name="texto_terms">He leído y acepto todos los términos y condiciones.</string>
+    <string name="form_required_field">Campo requerido.</string>
+    <!--Tips mascotas -->
+    <string name="small_dog_image_description">imagen de perro pequeño</string>
+    <string name="medium_dog_image_description">imagen de perro mediano</string>
+    <string name="large_dog_image_description">imagen de perro grande</string>
+    <string name="titulotips">Recomendaciones para tu mascota</string>
+    <string name="textotips1">Tipo de mascota:</string>
+    <string name="genero_machotips">Perro</string>
+    <string name="genero_hembratips">Gato</string>
+    <string name="items_labels">Género de tu mascota</string>
+    <string name="titu">Sigue estas recomendaciones para tu mascota</string>
+    <string name="macho_image_desc">Imagen de perro</string>
+    <string name="female_image_desc">Imagen de gato</string>
+    <string name="autocomplete_desc">Campo para seleccionar el género de tu mascota</string>
+
+    <!--Registro textos -->
+    <string name="titulo2">Inicio de sesión</string>
+    <string name="hint_Contraseña">Contraseña</string>
+    <string name="olContraseña">¿Olvidaste tu contraseña?</string>
+    <string name="hint_Iniciar">Ingresar</string>
+    <string name="comentario">Comentario</string>
+    <string name="Reseña1">Gran producto, funciona exactamente como debería. Lo tengo programado para 6 porciones individuales al día, por lo que ahora hay mucho menos vómito que limpiar, evita que yo llene el tazón y que el gato se lo coma todo.</string>
+    <string name="dispensar_agua">DISPENSAR AGUA</string>
+    <string name="dispensar_comida">DISPENSAR COMIDA</string>
+</resources>

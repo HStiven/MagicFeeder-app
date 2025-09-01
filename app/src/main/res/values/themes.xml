@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SingUpLoginFirebase" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorPrimaryVariant">@color/secundario</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/magicfeeder_600</item>
+        <item name="colorSecondaryVariant">@color/magicfeeder_900</item>
+        <item name="colorOnSecondary">@color/magicfeeder_50</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <!-- Cambiar el color del track del Slider -->
+        <item name="colorControlNormal">@color/magicfeeder_900</item>
+        <!-- Cambiar el color del thumb del Slider -->
+        <item name="colorAccent">@color/magicfeeder_100</item>
+    </style>
+
+    <style name="CustomRangeSliderStyleLight" parent="@style/Widget.MaterialComponents.Slider">
+        <!-- Cambiar el color del track del Slider -->
+        <item name="trackColorInactive">@color/magicfeeder_50</item>
+        <!-- Cambiar el color del thumb del Slider -->
+        <item name="thumbColor">@color/magicfeeder_300</item>
+
+        <item name="colorSecondary">@color/secundario</item>
+        <item name="colorSecondaryVariant">@color/primario</item>
+        <item name="colorOnSecondary">@color/magicfeeder_50</item>
+    </style>
+
+    <style name="TextView.Light" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

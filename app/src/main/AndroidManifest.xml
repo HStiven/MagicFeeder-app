@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.SingUpLoginFirebase"
+        tools:ignore="ExtraText"
+        tools:targetApi="31">
+        <activity
+            android:name=".SpashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DispensadorMenu"
+            android:exported="false" />
+        <activity
+            android:name="FirstApp.MainActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".Contactanos"
+            android:exported="false" />
+        <activity
+            android:name="FirstApp.MainActivity4"
+            android:exported="false" />
+        <activity
+            android:name="FirstApp.MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name="FirstApp.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name="FirstApp.PrimeraAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SingUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Paginadeinicio"
+            android:exported="false" />
+        <activity
+            android:name=".Foro"
+            android:exported="false" />
+    </application>
+
+</manifest>

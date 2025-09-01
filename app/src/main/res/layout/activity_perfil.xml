@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pano"
+                android:layout_width="0dp"
+                android:layout_height="187dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/primario"
+                />
+
+            <ImageView
+                android:id="@+id/fech"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_density"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backInicio"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/baseline_logout_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints,RtlHardcoded,RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/usuariolindo"
+                android:layout_width="193dp"
+                android:layout_height="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/usuariolindo"
+                android:layout_marginTop="36dp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Nombre"
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableRight="@drawable/ic_lapiz"
+                    android:ems="10"
+                    android:hint="@string/button10"
+                    android:inputType="textPersonName"
+                    tools:ignore="Autofill,MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/Apellido"
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableRight="@drawable/ic_lapiz"
+                    android:ems="10"
+                    android:hint="@string/Apellido"
+                    android:inputType="text"
+                    tools:ignore="Autofill,MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/Usuario"
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableRight="@drawable/ic_lapiz"
+                    android:ems="10"
+                    android:hint="@string/button5"
+                    android:inputType="text"
+                    tools:ignore="MissingConstraints" />
+
+
+                <EditText
+                    android:id="@+id/Número"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableRight="@drawable/ic_lapiz"
+                    android:ems="10"
+                    android:hint="@string/button4"
+                    android:inputType="phone"
+                    tools:ignore="MissingPrefix" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="370dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/magicfeeder_300"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+                <TextView
+                    android:id="@+id/ques"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Datos de la mascota"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/magicfeeder_300"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnMicrofono"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/TipoMascota"
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableRight="@drawable/ic_lapiz"
+                    android:ems="10"
+                    android:hint="@string/button7"
+                    android:inputType="text"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/NombreMascota"
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableRight="@drawable/ic_lapiz"
+                    android:ems="10"
+                    android:hint="@string/button8"
+                    android:inputType="text" />}
+
+                <TextView
+                    android:id="@+id/generoTextView"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Género"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/magicfeeder_300"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnMicrofono"
+                    tools:ignore="HardcodedText" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dialog"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:padding="6dp"
+                    android:prompt="@string/spinner_prompt"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"/>
+
+                <EditText
+                    android:id="@+id/Edad"
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:drawableRight="@drawable/ic_lapiz"
+                    android:ems="10"
+                    android:hint="@string/button6"
+                    android:inputType="number"
+                    tools:ignore="Autofill,MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/RazaMascota"
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableRight="@drawable/ic_lapiz"
+                    android:ems="10"
+                    android:hint="@string/button9"
+                    android:inputType="text"
+                    tools:ignore="MissingConstraints" />
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/Cancelar"
+                        android:layout_width="132dp"
+                        android:layout_height="49dp"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginBottom="40dp"
+                        android:backgroundTint="@color/magicfeeder_900"
+                        android:text="@string/button2"
+                        android:textColorLink="#4E6D85"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/Guardar"
+                        android:layout_width="132dp"
+                        android:layout_height="49dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="40dp"
+                        android:backgroundTint="@color/magicfeeder_900"
+                        android:text="@string/button1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.463"
+                        app:layout_constraintStart_toEndOf="@+id/Cancelar"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

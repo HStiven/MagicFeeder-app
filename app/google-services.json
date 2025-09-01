@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "722650292877",
+    "project_id": "magic-feeder-c6786",
+    "storage_bucket": "magic-feeder-c6786.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722650292877:android:435a193e11f39a4213b8c4",
+        "android_client_info": {
+          "package_name": "com.example.singuploginfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4SRcHFn2xQPC6H_DoLcC5UEcFFkRzyMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
